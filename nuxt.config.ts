@@ -7,6 +7,8 @@ export default defineNuxtConfig({
     '@nuxthq/studio',
     '@nuxt/content',
     '@nuxt/icon',
+    '@nuxtjs/tailwindcss',
+    '@tailwindcss/typography',
   ],
 
   components: {
