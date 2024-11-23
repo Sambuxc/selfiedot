@@ -1,0 +1,21 @@
+h1, h2, h3, h4, h5, h6 {
+  @apply mb-2;
+}
+
+h1 {
+  @apply text-2xl font-bold;
+}
+
+h2 {
+  @apply text-xl font-bold;
+}
+
+p + * {
+  @apply mt-4;
+}
+
+/** Links */
+
+a {
+  color: rgb(0 0 0/1);
+}

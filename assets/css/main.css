@@ -1,4 +1,5 @@
 @import './tailwind.css';
+@import './typography.css';
 
 /** Wrappers */
 
@@ -18,7 +19,7 @@
   @apply md:max-w-4xl lg:max-w-5xl xl:max-w-7xl;
 }
 
-a {
-  color: rgb(0 0 0/1);
+section + section {
+  @apply mt-8;
 }
 
