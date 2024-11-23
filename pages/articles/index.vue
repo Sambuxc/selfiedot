@@ -1,3 +1,14 @@
+<template>
+  <main class="layout layout-articles">
+    <div>
+      <h1>Articles</h1>
+      <p>This is all the articles we've got for now.</p>
+      
+      <OrganismsArticlesList v-if="articles" :articles="articles" />
+    </div>
+  </main>
+</template>
+
 <script setup lang="ts">
 interface Article {
   id: number
@@ -23,13 +34,3 @@ const { data: articles } = await useFetch<Article[]>('/articles.json', {
   transform: (data) => data as Article[]
 })
 </script>
-
-<template>
-  <main class="prose dark:prose-invert max-w-none min-h-screen bg-white dark:bg-gray-900">
-    <div class="container mx-auto px-4 py-8">
-      <h1>Articles</h1>
-      <p>This is all the articles we've got for now.</p>
-      <OrganismsArticlesList v-if="articles" :articles="articles" />
-    </div>
-  </main>
-</template>

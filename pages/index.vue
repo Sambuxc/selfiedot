@@ -1,17 +1,6 @@
-<script setup lang="ts">
-definePageMeta({
-  layout: 'default'
-})
-
-useSeoMeta({
-  title: 'Selfie dot',
-  description: 'Content you can read in less than 3-minutes.'
-})
-</script>
-
 <template>
-  <main class="prose dark:prose-invert max-w-none">
-    <div class="container mx-auto px-4 py-8">
+  <main class="layout layout-main">
+    <div>
       <h1>Selfie dot</h1>
       
       <p class="text-lg">Content you can read in less than 3-minutes.</p>
@@ -25,7 +14,7 @@ useSeoMeta({
           <li>Enjoy meta tag generation</li>
           <li>Generated navigation from pages</li>
           <li>Leverage TailwindCSS Typography</li>
-          <li>Switch between light & dark mode</li>
+          <li>Switch between light &amp; dark mode</li>
           <li>Access 100,000 icons from 100+ icon sets</li>
           <li>Highlight code blocks with Shiki</li>
           <li>Create Vue components and use them in Markdown</li>
@@ -126,3 +115,14 @@ With a beautiful description
     </div>
   </main>
 </template>
+
+<script setup lang="ts">
+definePageMeta({
+  layout: 'default'
+})
+
+useSeoMeta({
+  title: 'Selfie dot',
+  description: 'Content you can read in less than 3-minutes.'
+})
+</script>

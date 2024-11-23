@@ -1,0 +1,26 @@
+@import './tailwind.css';
+
+/** Wrappers */
+
+#__nuxt {
+  background-color: rgb(249 250 251/1);
+  color: rgb(0 0 0/1);
+  height: 100vh;
+}
+
+.layout > div {
+  @apply container px-4 mx-auto;
+}
+
+.layout-main {
+  @apply px-4 py-10 m-auto max-w-2xl bg-white ring-1 ring-gray-200 sm:px-8 sm:shadow dark:bg-gray-800 dark:ring-gray-700 sm:rounded-lg;
+}
+
+.layout-articles {
+  @apply px-4 py-10 m-auto max-w-7xl bg-white ring-1 ring-gray-200 sm:px-8 sm:shadow dark:bg-gray-800 dark:ring-gray-700 sm:rounded-lg;
+}
+
+a {
+  color: rgb(0 0 0/1);
+}
+
