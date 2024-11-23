@@ -10,12 +10,28 @@ h2 {
   @apply text-xl font-bold;
 }
 
+h3 {
+  @apply text-lg font-bold;
+}
+
 p + * {
   @apply mt-4;
+}
+
+p + p {
+  @apply mt-2;
+}
+
+a.button-link + a.button-link {
+  @apply ml-2;
 }
 
 /** Links */
 
 a {
   color: rgb(0 0 0/1);
+}
+
+.list-inside {
+  list-style-position: inside;
 }

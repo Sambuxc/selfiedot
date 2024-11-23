@@ -5,7 +5,8 @@
         <NuxtLink
           :to="link.path"
           active-class="font-bold"
-          class="mr-6 hover:text-blue-600 hover:transition-all hover:duration-300">
+          class="mr-6 hover:text-blue-600 hover:transition-all hover:duration-300"
+          :class="{ 'text-transparent dark:!text-transparent dark:hover:!text-gray-300': link.hidden }">
           {{ link.name }}
         </NuxtLink>
       </li>
@@ -46,6 +47,7 @@ const appConfig = useAppConfig()
 const links = [
   { name: 'Home', path: '/' },
   { name: 'Articles', path: '/articles' },
+  { name: 'Features', path: '/features', hidden: true },
 ];
 </script>
 

@@ -6,10 +6,10 @@
         <p v-html="article.content" class="max-w-none prose dark:prose-invert dark:text-white"></p>
         <div v-if="article.citations?.length" class="mt-8">
           <h3>Citations</h3>
-          <ul>
+          <ul class="list-disc list-inside">
             <li v-for="citation in article.citations" :key="citation">
-              <a :href="citation" target="_blank" rel="noopener noreferrer">
-                {{ citation }}
+              <a :href="citation" target="_blank" rel="noopener noreferrer" class="pb-1 text-blue-500 border border-t-0 border-r-0 border-l-0 border-blue-500 border-b-1 hover:border-0">
+                [ {{ citation }} ]
               </a>
             </li>
           </ul>
