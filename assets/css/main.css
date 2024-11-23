@@ -2,22 +2,20 @@
 
 /** Wrappers */
 
-#__nuxt {
-  background-color: rgb(249 250 251/1);
-  color: rgb(0 0 0/1);
-  height: 100vh;
+.layout {
+  @apply mx-2 sm:mx-auto max-w-2xl px-4 py-8 lg:py-10 m-auto bg-white ring-1 ring-gray-200 sm:px-8 sm:shadow dark:bg-gray-800 dark:ring-gray-700 rounded-lg;
+  @apply transition-all duration-300;
 }
 
 .layout > div {
-  @apply container px-4 mx-auto;
+  @apply container p-2 lg:p-4 mx-auto;
 }
 
 .layout-main {
-  @apply px-4 py-10 m-auto max-w-2xl bg-white ring-1 ring-gray-200 sm:px-8 sm:shadow dark:bg-gray-800 dark:ring-gray-700 sm:rounded-lg;
 }
 
 .layout-articles {
-  @apply px-4 py-10 m-auto max-w-7xl bg-white ring-1 ring-gray-200 sm:px-8 sm:shadow dark:bg-gray-800 dark:ring-gray-700 sm:rounded-lg;
+  @apply md:max-w-4xl lg:max-w-5xl xl:max-w-7xl;
 }
 
 a {

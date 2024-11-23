@@ -1,5 +1,5 @@
 <template>
-  <div class="container mx-auto sm:pt-6 sm:pb-10">
+  <div class="container">
     <NavBar />
     <NuxtPage />
   </div>
@@ -11,6 +11,6 @@ import NavBar from '@/components/molecules/NavBar.vue'
 
 <style scoped>
 .container {
-  @apply p-0 m-0 max-w-full dark:bg-gray-900 dark:text-gray-100;
+  @apply mx-auto pb-2 sm:pt-6 md:pb-10 max-w-full min-h-screen dark:bg-gray-900 dark:text-gray-100;
 }
 </style>

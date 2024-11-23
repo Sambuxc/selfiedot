@@ -50,6 +50,11 @@ const links = [
 </script>
 
 <style scoped>
+/**
+ * TODO
+ * if the navbar is on the layout-article page, the styles should be different.
+ * the navbar should match the layout-article.
+ */
 nav li a {
   @apply dark:text-gray-100 hover:text-gray-700 dark:hover:text-gray-300 cursor-pointer;
 }
