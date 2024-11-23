@@ -29,7 +29,7 @@ export default defineNuxtConfig({
   },
 
   compatibilityDate: '2024-11-14',
-  css: ['~/assets/css/tailwind.css'],
+  css: ['~/assets/css/main.css'],
   postcss: {
     plugins: {
       tailwindcss: {},
