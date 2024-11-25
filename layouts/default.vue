@@ -7,6 +7,12 @@
 
 <script setup>
 import NavBar from '@/components/molecules/NavBar.vue'
+
+useHead({
+  htmlAttrs: {
+    lang: 'en'
+  },
+})
 </script>
 
 <style scoped>
