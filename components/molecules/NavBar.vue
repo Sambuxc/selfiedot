@@ -14,28 +14,27 @@
 
     <!-- Social icons -->
     <ul class="flex space-x-3 text-gray-500 transition socials">
-      <li
-        v-if="appConfig.socials?.twitter"
-        title="Twitter">
-        <a :href="`https://twitter.com/${appConfig.socials?.twitter}`" target="_blank">
+      <li v-if="appConfig.socials?.twitter">
+        <a title="Twitter" :href="`https://twitter.com/${appConfig.socials?.twitter}`" target="_blank">
+          <span class="sr-only" aria-hidden="true">Twitter link</span>
           <Icon name="fa-brands:twitter" class="w-5 h-5" />
         </a>
       </li>
-      <li
-        v-if="appConfig.socials?.github"
-        title="GitHub">
-        <a :href="`https://github.com/${appConfig.socials?.github}`" target="_blank">
+      <li v-if="appConfig.socials?.github">
+        <a title="GitHub" :href="`https://github.com/${appConfig.socials?.github}`" target="_blank">
+          <span class="sr-only" aria-hidden="true">Github link</span>
           <Icon name="fa-brands:github" class="w-5 h-5" />
         </a>
       </li>
-      <li
-        v-if="appConfig.socials?.youtube"
-        title="YouTube">
-        <a :href="`https://youtube.com/${appConfig.socials?.youtube}`" target="_blank">
+      <li v-if="appConfig.socials?.youtube">
+        <a title="YouTube" :href="`https://youtube.com/${appConfig.socials?.youtube}`" target="_blank">
+          <span class="sr-only" aria-hidden="true">Youtube link</span>
           <Icon name="fa-brands:youtube" class="w-5 h-5" /> 
         </a>
       </li>
-      <ColorModeSwitch class="dark:text-gray-100 hover:text-gray-700 dark:hover:text-gray-300" />
+      <li>
+        <ColorModeSwitch class="dark:text-gray-100 hover:text-gray-700 dark:hover:text-gray-300" />
+      </li>
     </ul>
   </nav>
 </template>
