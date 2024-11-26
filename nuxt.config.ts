@@ -2,12 +2,18 @@ export default defineNuxtConfig({
   nitro: {
     prerender: {
       failOnError: false,
+      crawlLinks: true, // Ensure all links are crawled
+      routes: ['/'] // Explicitly define routes to prerender
     },
   },
 
-  // routeRules: {
-  //   '/': { prerender: true }
-  // },
+  routeRules: {
+    '/': { 
+      prerender: true,
+      // Add fallback handling
+      static: true 
+    }
+  },
 
   modules: [
     '@nuxthq/studio',
