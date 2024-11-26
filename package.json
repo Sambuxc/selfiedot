@@ -6,12 +6,12 @@
   "scripts": {
     "dev": "nuxi dev",
     "build": "nuxi build",
+    "build:ghp": "npx nuxt build --preset github_pages",
     "generate": "nuxi generate",
     "preview": "nuxi preview"
   },
   "dependencies": {
     "@nuxt/content": "^3.0.0-alpha.6",
-    "@nuxthq/studio": "^2.2.1",
     "@nuxtjs/color-mode": "^3.4.1",
     "@nuxtjs/tailwindcss": "^6.12.2",
     "@tailwindcss/typography": "^0.5.15"
